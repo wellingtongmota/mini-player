@@ -1,5 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #D1D1D1;
+
+    display: flex;
+    /* alinhamento no eixo principal - vertical */
+    justify-content: center;
+    /* alinhamento no eixo transversal - horizontal */
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    width: 380px;
+    height: auto;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    box-shadow: 0 0 20px gray;
+    padding: 30px;
+}
+
+.cover {
+    width: 320px;
+    height: 320px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.info-music {
+    margin: 20px 0px;
+}
+
+.info-music .music {
+    font-style: Light;
+}
+
+.info-music .singer {
+    font-style: SemiBold;
+}
+
+.progress {
+    width: 100%;
+}
+
+progress {
+    width: 100%;
+}
+
+.temp {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin: 0px 0px 20px;
+}
+
+.player ion-icon {
+    font-size: 36px;
+    margin: 0px 10px;
+    cursor: pointer;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,33 @@
     
     <title>Mini player</title>
 </head>
+
 <body>
+    <div class="container">
+        <div class="cover"></div>
+        <div class="info-music">
+            <p class="music">Musica</p>
+            <p class="singer">Cantor</p>
+        </div>
+        <div class="progress">
+            <progress value="0.8" max="1"></progress>
+        </div>
+        <div class="temp">
+            <p>00:00</p>
+            <p>00:00</p>
+        </div>
+        <div class="player">
+            <ion-icon name="shuffle"></ion-icon>
+            <ion-icon name="play-skip-back"></ion-icon>
+            <ion-icon name="play" id="play"></ion-icon>
+            <ion-icon name="play-skip-forward"></ion-icon>
+            <ion-icon name="repeat"></ion-icon>
+        </div>
+        <audio src="musics/Bon Jovi/8 - Everybody's Broken.mp3"></audio>
+    </div>
+
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
+
 </html>
